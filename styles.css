@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #322a33, #010807);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 30px rgba(58, 18, 168, 0.2);
+    max-width: 800px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    margin: 0 15px;
+    width: 100px;
+}
+
+.countdown-value {
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(2, 1, 2, 0.2);
+    border-radius: 10px;
+    padding: 15px 0;
+    margin-bottom: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease;
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.input-section {
+    margin: 40px 0 20px;
+}
+
+input, select, button {
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+input, select {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+button {
+    background-color: #1e2501;
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff00bf;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-info {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+    .countdown-item {
+        margin: 10px;
+        width: 70px;
+    }
+    
+    .countdown-value {
+        font-size: 2rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
